@@ -1,0 +1,51 @@
+body {
+    background-color: white;
+    background-image: url("./bck.jpg");
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    position: absolute;
+    left: 110px;
+    top: 40px;
+    z-index: 1;
+}
+
+.breathing {
+    width: 200px;
+    height: 200px;
+    background-image: url("./natillita.jpg");
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    animation: breathing 4s linear infinite;
+}
+
+@keyframes breathing {
+    0% {
+        box-shadow: 0 0 0 15px rgba(145,20,11, .3),
+                    0 0 0 30px rgba(145,20,11, .3),
+                    0 0 0 45px rgba(145,20,11, .3),
+                    0 0 0 60px rgba(145,20,11, .3),
+                    0 0 0 75px rgba(145,20,11, .3)
+    }
+    50% {
+        box-shadow: 0 0 0 25px rgba(145,20,11, .3),
+                    0 0 0 50px rgba(145,20,11, .3),
+                    0 0 0 75px rgba(145,20,11, .3),
+                    0 0 0 100px rgba(145,20,11, .3),
+                    0 0 0 125px rgba(145,20,11, .3)
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(145,20,11, .3),
+                    0 0 0 30px rgba(145,20,11, .3),
+                    0 0 0 45px rgba(145,20,11, .3),
+                    0 0 0 60px rgba(145,20,11, .3),
+                    0 0 0 75px rgba(145,20,11, .3)
+    }
+}
